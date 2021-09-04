@@ -1,0 +1,669 @@
+/* font-family: 'Poppins', sans-serif;
+font-family: 'Work Sans', sans-serif; */
+img {
+  max-width: 100%;
+}
+
+.header {
+  background-image: url(./img/wine-3-min-1-scaled.jpg);
+  padding: 380px 0px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.manu {}
+
+.manu ul {}
+
+.manu ul li {
+  display: inline-block;
+}
+
+.manu ul li a {
+  display: inline-block;
+  font-size: 17px;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  text-transform: capitalize;
+  color: white;
+  transition: .5s;
+  text-decoration: none;
+  padding: 0 15px;
+}
+
+.ac {
+  position: relative;
+  bottom: 30px;
+}
+
+.manu ul li a:hover {
+  color: #5cb280;
+}
+
+/* drop down manu  */
+
+.manu ul li {
+  position: relative;
+}
+
+.manu ul li ul {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: black;
+  width: 600px;
+  transform: scaleY(0);
+  transition: .4s;
+  transform-origin: top;
+}
+
+.manu ul li ul li {
+  padding: 100px 200px;
+  background: url(./img/anilana-wine-n-dine-min.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: cover;
+  text-align: center;
+  height: 200px;
+}
+
+.header span a {
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  transition: .5s;
+}
+
+.manu ul li:hover ul {
+  transform: scaleY(1);
+}
+
+.header span a:hover {
+  color: #5cb280;
+}
+
+.mid-img {}
+
+.mid-img img {
+  position: relative;
+  top: 261px;
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+
+@keyframes up-down {
+  0% {
+    transform: translateY(23px);
+  }
+
+  100% {
+    transform: translateY(-23px);
+  }
+}
+
+.auto2 {
+  overflow: hidden;
+}
+
+.auto2 img {
+  animation: top-bottom 2s ease-in-out infinite alternate-reverse both;
+}
+
+@keyframes top-bottom {
+  0% {
+    transform: translateX(30px);
+  }
+
+  100% {
+    transform: translateX(-30px);
+  }
+}
+
+.shaid {
+  animation: left-center 2s ease-in-out infinite alternate-reverse both;
+}
+
+@keyframes left-center {
+  0% {
+    transform: rotateY(360deg) translateX(50px);
+  }
+
+  100% {
+    transform: rotateY(-360px) translateX(-50px);
+  }
+}
+
+.div1 {
+  animation: left-cente 2s ease-in-out infinite alternate-reverse both;
+}
+
+@keyframes left-cente {
+  0% {
+    transform: translateX(10px);
+  }
+
+  100% {
+    transform: translateX(-10px);
+  }
+}
+
+
+.mid-img2 {}
+
+.mid-img2 img {
+  position: relative;
+  top: 109px;
+}
+
+
+
+/* contant section  */
+
+
+
+.div-im {}
+
+.div-im img {
+  height: 45px;
+  width: auto;
+}
+
+.div-im h2 {
+  font-weight: 500;
+  text-transform: capitalize;
+  font-family: 'Work Sans', sans-serif;
+}
+
+.div-im p {
+  font-size: 16px;
+  font-weight: 200;
+  color: black;
+}
+
+.div1 {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  border: 2px solid #993e4f;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.div1 h6 {
+  line-height: 18px;
+  padding: 13px 0;
+  transition: .5s;
+}
+
+.new {
+  margin-top: 158px;
+  text-align: center;
+}
+
+.new img {
+  height: 300px;
+  width: 300px;
+}
+
+
+
+/* contant section  */
+
+
+
+.df {
+  margin-top: 70px;
+}
+
+
+.box {
+  width: 270px;
+  height: 350px;
+  margin: 10px auto;
+  box-shadow: 0 0 5px #bababa;
+  overflow: hidden;
+  position: relative;
+  margin-top: 2px;
+}
+
+.box:before,
+.box:after {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  opacity: 0;
+  z-index: 1;
+  transition: all 0.5s;
+}
+
+.box:before {
+  bottom: 5%;
+  left: 5%;
+  border-bottom: 2px solid rgb(61, 255, 2);
+  border-left: 2px dashed rgb(2, 7, 255);
+}
+
+.box:after {
+  top: 4.5%;
+  right: 4.4%;
+  border-top: 2px solid rgb(255, 0, 0);
+  border-right: 3px dotted rgb(255, 0, 255);
+}
+
+.box:hover:before,
+.box:hover:after {
+  opacity: 1;
+  width: 90%;
+  height: 90%;
+}
+
+.box img {
+  width: 100%;
+  height: auto;
+  transform: scale(1);
+  display: block;
+  transition: all 0.5s;
+}
+
+.box:hover img {
+  transform: scale(1.05);
+}
+
+.box .box-content {
+  color: #fff;
+  width: 100%;
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
+}
+
+.box .name,
+.box .post {
+  display: block;
+  font-size: 25px;
+  line-height: 25px;
+  margin: 0;
+  opacity: 1;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: all 0.5s;
+}
+
+.box .post,
+.box:hover .name {
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.box:hover .post {
+  opacity: 1;
+}
+
+
+
+/* 2n banner part section  */
+
+
+
+.banner2 {
+  background: url(./img/bottle-barrel-min.jpg);
+  padding: 100px 0;
+  background-attachment: fixed;
+  background-position: center center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.banner2 h2 {
+  color: white;
+  font-size: 30px;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+.banner2 h1 {
+  color: white;
+  font-size: 60px;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+.button{}
+.button a{
+  display: inline-block;
+  font-size: 25px; 
+  font-weight: 400;
+  color: white;
+  text-transform: uppercase; 
+  text-decoration: none;
+  background-color: #a34253;
+  padding: 5px 27px;
+  border-radius: 33px;
+  transition: .5s;
+}
+.button a:hover{
+  background-color: black;
+}
+.banner3 img{
+  height: 61px;
+}
+
+
+
+/* contant part start  */
+ 
+
+
+.contant{}
+.contant-pt img{
+  
+  width: 44px;
+}
+.contant-pt h4{
+   font-style: italic;
+   color: #a34253;
+}
+.contant-pt h2{
+  
+}
+.manu-br{}
+.manu-br ul{
+  text-align: center;
+}
+.manu-br ul li{
+  display: inline-block;
+} 
+.manu-br ul li a{
+  display: inline-block;
+
+  font-size: 16px;
+  padding: 9px 30px; 
+  font-weight: 400;
+  text-transform: uppercase; 
+  text-decoration: none;
+  border: 1px dashed black;
+  border-radius: 96px;
+  margin-right: 20px;
+  transition: .4s;
+  color: black;
+}
+.manu-br ul li a:hover{
+  background: #a34253;
+  border: 1px dashed #a34253;
+  color: white;
+}
+.manu-br ul li:first-child a{
+  background: #a34253;
+  border: none;
+  color:white;
+}
+
+
+
+/* contant section  */
+
+
+
+.containe{
+  height: 400px;
+  width: a;
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.3);
+  transition: 0.3s ease-out;
+}
+.containe:hover{
+  box-shadow: 0px 1px 35px 0px rgba(0,0,0,0.3);
+}
+.containe .image{
+  background: #000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  transition: transform 0.3s ease-out;
+}
+.containe:hover .image{
+  transform: translateY(-100px);
+}
+.image img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: opacity 0.3s ease-out;
+}
+.containe:hover .image img{
+  opacity: 0.7;
+}
+.containe:hover .image{
+ transform: translateY(-100px);
+}
+.containe ul{
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  list-style: none;
+}
+.containe ul li{
+  margin: 0 5px;
+}
+.containe ul li a{
+  display: block;
+  height: 50px;
+  width: 50px;
+  color: rgb(252, 252, 252);
+ transition: .5s;
+  font-size: 30px;
+  border-radius: 50%;
+  opacity: 0;
+  
+  transform: translateY(200px);
+ 
+  transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+}
+.containe ul li a:hover{
+  color: red;
+}
+.containe:hover > ul > li > a{
+  opacity: 1;
+  transform: translateY(0);
+}
+.containe:hover > ul > li:nth-child(2) a{
+  transition-delay: 0.1s;
+}
+.containe:hover > ul > li:nth-child(3) a{
+  transition-delay: 0.2s;
+}
+.containe:hover > ul > li:nth-child(4) a{
+  transition-delay: 0.3s;
+}
+.containe:hover > ul > li:nth-child(5) a{
+  transition-delay: 0.4s;
+}
+.containe .content{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+}
+.info{
+  position: absolute;
+  bottom: 20px;
+  text-align: center;
+  width: 100%;
+  color: #000;
+  line-height: 26px;
+}
+.info h2{
+  font-size: 27px;
+  margin: 3px 0;
+}
+.info span{
+  color: #1a1a1a;
+}
+
+
+
+/* slider part  */
+
+
+
+.slider{
+  background: url(./img/anilana-wine-n-dine-min.jpg);
+  padding: 100px 0px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: bottom center;
+background-size: cover;
+}
+
+.fox h1 {
+	font-size: 44px;
+	color: rgba(39, 168, 168, 0);
+	background-image: url(./img/images.jfif);
+	background-repeat: repeat-x;
+	-webkit-background-clip: text;
+	animation: animate 15s linear infinite;
+	font-weight: 900;
+	text-transform: capitalize;  
+}
+.fox p{
+    margin-top: 20px;
+    font-size: 17px;
+	color: rgba(0, 0, 0, 0);
+	background-image: url(./img/images.jfif);
+	background-repeat: repeat-x;
+	-webkit-background-clip: text; 
+	animation: animate 20s linear infinite;
+	font-weight: 900;
+	text-transform: capitalize; 
+    padding: 0px 150px;
+}
+.fox {
+	text-align: center;
+    
+}
+@keyframes animate {
+	0% {
+		background-position: left 0px top 10px;
+	}
+	40% {
+		background-position: left 800px top 10px;
+	}
+}
+
+.manu ul li a {
+  font-size: 19px;
+	color: rgba(39, 168, 168, 0);
+	background-image: url(./img/images.jfif);
+	background-repeat: repeat-x;
+	-webkit-background-clip: text;
+	animation: animate 15s linear infinite;
+	font-weight: 900;
+	text-transform: capitalize;
+}
+
+
+
+
+.box1 {
+  width: 100px;
+  position: relative;
+  border: 3px red solid;
+  border-radius: 50%;
+  text-align: center;
+  margin: auto; 
+  margin-top: 30px;
+}
+
+.box-pic img {
+  text-align: center;
+}
+
+.box1 .box-pic {
+  position: relative;
+  transform-origin: 95% 50% 0;
+  transition: all 0.5s;
+  z-index: 1;
+
+  text-align: center;
+}
+
+.box1 .box-pic:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 95%;
+  width: 8px;
+  height: 8px;
+  background: rgb(15, 117, 250);
+  border-radius: 50%;
+}
+
+.box1 .box-pic img {
+  border-radius: 50%;
+}
+
+.box1:hover .box-pic {
+  transform: rotate(-140deg);
+
+}
+
+.box1 .box-content {
+  text-align: center;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; 
+  background: rgb(0, 0, 0);
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+.box-content h3{
+	color: rgba(39, 168, 168, 0);
+	background-image: url(./img/images.jfif);
+	background-repeat: repeat-x;
+	-webkit-background-clip: text;
+	font-weight: 900;
+	text-transform: capitalize;
+  font-size: 15px;
+  position: relative;
+  top: 33px;
+  text-transform: capitalize;
+}
+
+
+
+/* blog section  */
+
+
+
+.last{
+  overflow: hidden;
+}
+.last img{
+  transition: .5s;
+  overflow: hidden;
+}
+.last img:hover{
+  transform: scale(1.3);
+}
+
+
+.fixed{
+  position: fixed;
+  top: 50%;
+  right: 0;
+  cursor: pointer;
+}
+.fixed img{
+  
+}
+
